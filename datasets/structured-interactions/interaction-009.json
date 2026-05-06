@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-009",
+
+  "interaction_type": "faculty_collaboration",
+
+  "actors": [
+    "lecturer",
+    "research_group",
+    "students"
+  ],
+
+  "narrative": "Lecturers and students collaboratively organized a community literacy program that strengthened academic solidarity and social engagement.",
+
+  "themes": [
+    "solidarity",
+    "community_engagement",
+    "collaboration"
+  ],
+
+  "emotional_signals": [
+    "enthusiasm",
+    "collective_pride"
+  ],
+
+  "organizational_intent": "strengthen collaborative culture",
+
+  "dynamics_classification": "positive_collective_alignment",
+
+  "organizational_signals": [
+    "social_cohesion",
+    "collective_engagement"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": 4,
+    "participation_pulse": 4,
+    "innovation_pulse": 2
+  }
+}
