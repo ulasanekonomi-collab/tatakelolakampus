@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-014",
+
+  "interaction_type": "informal_academic_coordination",
+
+  "actors": [
+    "senior_lecturer",
+    "junior_lecturer",
+    "student_team"
+  ],
+
+  "narrative": "A respected senior lecturer informally coordinated collaboration among lecturers and students, helping resolve tensions and encouraging collective engagement.",
+
+  "themes": [
+    "informal_leadership",
+    "collaboration",
+    "academic_support"
+  ],
+
+  "emotional_signals": [
+    "trust",
+    "encouragement"
+  ],
+
+  "organizational_intent": "strengthen collaborative relationships",
+
+  "dynamics_classification": "informal_positive_alignment",
+
+  "organizational_signals": [
+    "social_trust",
+    "peer_coordination"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": 5,
+    "participation_pulse": 4,
+    "innovation_pulse": 2
+  }
+}
