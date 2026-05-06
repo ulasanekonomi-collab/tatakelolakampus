@@ -1,1 +1,39 @@
+{
+  "interaction_id": "INT-002",
 
+  "interaction_type": "cross_unit_coordination",
+
+  "actors": [
+    "administrative_staff",
+    "quality_assurance_team",
+    "lecturer"
+  ],
+
+  "narrative": "Several academic staff members expressed frustration regarding repetitive accreditation reporting requests from multiple units without coordination.",
+
+  "themes": [
+    "coordination",
+    "bureaucracy",
+    "workload"
+  ],
+
+  "emotional_signals": [
+    "frustration",
+    "fatigue"
+  ],
+
+  "organizational_intent": "improve administrative coordination",
+
+  "dynamics_classification": "systemic_tension",
+
+  "organizational_signals": [
+    "coordination_overlap",
+    "administrative_burden"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": -1,
+    "participation_pulse": -2,
+    "innovation_pulse": -1
+  }
+}
