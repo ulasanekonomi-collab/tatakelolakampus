@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-010",
+
+  "interaction_type": "leadership_policy_meeting",
+
+  "actors": [
+    "rector",
+    "faculty_leadership",
+    "lecturer"
+  ],
+
+  "narrative": "Several lecturers perceived that strategic academic decisions were announced without sufficient consultation, creating feelings of symbolic exclusion from institutional governance.",
+
+  "themes": [
+    "leadership",
+    "participation",
+    "institutional_legitimacy"
+  ],
+
+  "emotional_signals": [
+    "disappointment",
+    "alienation"
+  ],
+
+  "organizational_intent": "improve governance legitimacy",
+
+  "dynamics_classification": "symbolic_power_tension",
+
+  "organizational_signals": [
+    "top_down_governance",
+    "participation_gap"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": -4,
+    "participation_pulse": -3,
+    "innovation_pulse": -1
+  }
+}
