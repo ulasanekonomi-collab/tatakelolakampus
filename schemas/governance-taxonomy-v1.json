@@ -1,0 +1,82 @@
+{
+  "taxonomy_name": "TatakelolaKampus Governance Taxonomy",
+  "version": "1.0",
+
+  "emotional_signals": [
+    "trust",
+    "frustration",
+    "hope",
+    "fatigue",
+    "fear",
+    "optimism",
+    "skepticism",
+    "motivation",
+    "alienation",
+    "burnout"
+  ],
+
+  "governance_states": [
+    "stable",
+    "adaptive",
+    "fragmented",
+    "bureaucratic_overload",
+    "innovation_driven",
+    "high_trust",
+    "low_participation",
+    "crisis_response",
+    "recovering",
+    "transformative"
+  ],
+
+  "organizational_dynamics": [
+    "constructive_divergence",
+    "systemic_tension",
+    "policy_resistance",
+    "cross_unit_collaboration",
+    "innovation_blockage",
+    "adaptive_recovery",
+    "coordination_overlap",
+    "administrative_burden",
+    "governance_fragmentation",
+    "participatory_alignment"
+  ],
+
+  "actor_types": [
+    "rector",
+    "vice_rector",
+    "dean",
+    "head_of_program",
+    "lecturer",
+    "student",
+    "administrative_staff",
+    "quality_assurance_team",
+    "senate",
+    "external_partner"
+  ],
+
+  "institutional_conditions": [
+    "accreditation_pressure",
+    "digital_transition",
+    "policy_restructuring",
+    "budget_constraint",
+    "leadership_transition",
+    "curriculum_reform",
+    "organizational_expansion",
+    "governance_conflict",
+    "institutional_fatigue",
+    "innovation_push"
+  ],
+
+  "risk_categories": [
+    "trust_erosion",
+    "coordination_failure",
+    "innovation_decline",
+    "participation_drop",
+    "bureaucratic_rigidity",
+    "policy_misalignment",
+    "organizational_fragmentation",
+    "burnout_risk",
+    "communication_breakdown",
+    "institutional_instability"
+  ]
+}
