@@ -1,0 +1,95 @@
+{
+  "ontology_name": "TatakelolaKampus Organizational Ontology",
+
+  "version": "1.0",
+
+  "description": "Semantic ontology for organizational governance interpretation in higher education institutions.",
+
+  "core_domains": [
+
+    {
+      "domain": "governance",
+
+      "concepts": [
+        "participation",
+        "transparency",
+        "legitimacy",
+        "accountability",
+        "policy_alignment"
+      ]
+    },
+
+    {
+      "domain": "organizational_dynamics",
+
+      "concepts": [
+        "constructive_divergence",
+        "systemic_tension",
+        "adaptive_recovery",
+        "innovation_blockage",
+        "policy_resistance"
+      ]
+    },
+
+    {
+      "domain": "emotional_culture",
+
+      "concepts": [
+        "trust",
+        "frustration",
+        "hope",
+        "fatigue",
+        "burnout",
+        "reconciliation"
+      ]
+    },
+
+    {
+      "domain": "institutional_learning",
+
+      "concepts": [
+        "reflection",
+        "dialogue",
+        "knowledge_sharing",
+        "collaborative_learning",
+        "adaptive_change"
+      ]
+    },
+
+    {
+      "domain": "innovation_system",
+
+      "concepts": [
+        "digital_innovation",
+        "curriculum_innovation",
+        "risk_avoidance",
+        "procedural_inertia",
+        "organizational_agility"
+      ]
+    }
+  ],
+
+  "signal_taxonomy": {
+
+    "positive_signals": [
+      "trust_mediation",
+      "dialogic_repair",
+      "participatory_alignment",
+      "adaptive_learning"
+    ],
+
+    "negative_signals": [
+      "communication_gap",
+      "administrative_burden",
+      "reporting_overload",
+      "policy_resistance",
+      "procedural_inertia"
+    ]
+  },
+
+  "pulse_dimensions": [
+    "trust_pulse",
+    "participation_pulse",
+    "innovation_pulse"
+  ]
+}
