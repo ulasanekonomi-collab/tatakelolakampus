@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-006",
+
+  "interaction_type": "research_collaboration",
+
+  "actors": [
+    "research_center",
+    "external_partner",
+    "lecturer"
+  ],
+
+  "narrative": "A collaborative research initiative between lecturers and external partners generated enthusiasm due to flexible coordination and shared innovation goals.",
+
+  "themes": [
+    "collaboration",
+    "innovation",
+    "research_network"
+  ],
+
+  "emotional_signals": [
+    "optimism",
+    "motivation"
+  ],
+
+  "organizational_intent": "strengthen collaborative innovation",
+
+  "dynamics_classification": "positive_convergence",
+
+  "organizational_signals": [
+    "cross_unit_synergy",
+    "innovation_growth"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": 3,
+    "participation_pulse": 2,
+    "innovation_pulse": 4
+  }
+}
