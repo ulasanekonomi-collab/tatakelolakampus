@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-004",
+
+  "interaction_type": "innovation_discussion",
+
+  "actors": [
+    "research_team",
+    "lecturer",
+    "finance_unit"
+  ],
+
+  "narrative": "Researchers expressed frustration because innovative community service proposals experienced repeated administrative delays and unclear funding procedures.",
+
+  "themes": [
+    "innovation",
+    "bureaucracy",
+    "research_governance"
+  ],
+
+  "emotional_signals": [
+    "frustration",
+    "demotivation"
+  ],
+
+  "organizational_intent": "accelerate innovation support",
+
+  "dynamics_classification": "innovation_blockage",
+
+  "organizational_signals": [
+    "procedural_delay",
+    "innovation_fatigue"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": -1,
+    "participation_pulse": -2,
+    "innovation_pulse": -4
+  }
+}
