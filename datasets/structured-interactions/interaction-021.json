@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-021",
+
+  "interaction_type": "strategic_planning_forum",
+
+  "actors": [
+    "faculty_leadership",
+    "lecturer",
+    "administrative_staff"
+  ],
+
+  "narrative": "Although discussion forums were formally organized to gather institutional input, many participants perceived that strategic decisions had already been finalized beforehand.",
+
+  "themes": [
+    "participation",
+    "governance",
+    "institutional_trust"
+  ],
+
+  "emotional_signals": [
+    "skepticism",
+    "detachment"
+  ],
+
+  "organizational_intent": "increase authentic participation",
+
+  "dynamics_classification": "symbolic_participation",
+
+  "organizational_signals": [
+    "pseudo_deliberation",
+    "participation_fatigue"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": -4,
+    "participation_pulse": -3,
+    "innovation_pulse": -1
+  }
+}
