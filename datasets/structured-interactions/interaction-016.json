@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-016",
+
+  "interaction_type": "interfaculty_coordination",
+
+  "actors": [
+    "faculty_a",
+    "faculty_b",
+    "university_management"
+  ],
+
+  "narrative": "Different faculties interpreted institutional priorities differently, creating tension regarding resource allocation and academic identity recognition.",
+
+  "themes": [
+    "institutional_identity",
+    "resource_competition",
+    "coordination"
+  ],
+
+  "emotional_signals": [
+    "tension",
+    "defensiveness"
+  ],
+
+  "organizational_intent": "improve interfaculty alignment",
+
+  "dynamics_classification": "identity_fragmentation",
+
+  "organizational_signals": [
+    "resource_competition",
+    "institutional_fragmentation"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": -2,
+    "participation_pulse": -1,
+    "innovation_pulse": -1
+  }
+}
