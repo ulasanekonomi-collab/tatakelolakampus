@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-022",
+
+  "interaction_type": "innovation_proposal_meeting",
+
+  "actors": [
+    "young_lecturer",
+    "faculty_management",
+    "curriculum_team"
+  ],
+
+  "narrative": "Several young lecturers proposed digital learning innovations, but the proposals were repeatedly delayed due to procedural uncertainty and risk-avoidance attitudes within the institution.",
+
+  "themes": [
+    "innovation",
+    "bureaucracy",
+    "organizational_change"
+  ],
+
+  "emotional_signals": [
+    "frustration",
+    "discouragement"
+  ],
+
+  "organizational_intent": "accelerate adaptive innovation",
+
+  "dynamics_classification": "innovation_blockage",
+
+  "organizational_signals": [
+    "risk_avoidance",
+    "procedural_inertia"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": -1,
+    "participation_pulse": -2,
+    "innovation_pulse": -5
+  }
+}
