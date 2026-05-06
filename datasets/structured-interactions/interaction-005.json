@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-005",
+
+  "interaction_type": "student_affairs_dialogue",
+
+  "actors": [
+    "student_union",
+    "vice_dean",
+    "student_affairs_office"
+  ],
+
+  "narrative": "Student representatives questioned why student activity funding decisions were made without transparent communication and participatory discussion.",
+
+  "themes": [
+    "transparency",
+    "student_participation",
+    "governance"
+  ],
+
+  "emotional_signals": [
+    "dissatisfaction",
+    "skepticism"
+  ],
+
+  "organizational_intent": "improve participatory governance",
+
+  "dynamics_classification": "trust_tension",
+
+  "organizational_signals": [
+    "communication_gap",
+    "representation_issue"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": -3,
+    "participation_pulse": -2,
+    "innovation_pulse": 0
+  }
+}
