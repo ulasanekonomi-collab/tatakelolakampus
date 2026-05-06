@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-019",
+
+  "interaction_type": "academic_ethics_discussion",
+
+  "actors": [
+    "lecturer",
+    "research_committee",
+    "faculty_management"
+  ],
+
+  "narrative": "Several lecturers felt ethically conflicted after being pressured to prioritize administrative performance indicators over meaningful academic mentoring and research quality.",
+
+  "themes": [
+    "academic_ethics",
+    "performance_pressure",
+    "institutional_values"
+  ],
+
+  "emotional_signals": [
+    "disillusionment",
+    "moral_fatigue"
+  ],
+
+  "organizational_intent": "restore academic integrity",
+
+  "dynamics_classification": "moral_injury",
+
+  "organizational_signals": [
+    "metric_pressure",
+    "value_conflict"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": -3,
+    "participation_pulse": -2,
+    "innovation_pulse": -2
+  }
+}
