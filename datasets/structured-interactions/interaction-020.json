@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-020",
+
+  "interaction_type": "institutional_collaboration",
+
+  "actors": [
+    "lecturer",
+    "student_volunteers",
+    "community_partners"
+  ],
+
+  "narrative": "Despite limited institutional resources, lecturers and students collaboratively sustained community engagement programs through informal cooperation and mutual support.",
+
+  "themes": [
+    "resilience",
+    "community_engagement",
+    "collaboration"
+  ],
+
+  "emotional_signals": [
+    "solidarity",
+    "commitment"
+  ],
+
+  "organizational_intent": "strengthen collaborative resilience",
+
+  "dynamics_classification": "collective_resilience",
+
+  "organizational_signals": [
+    "grassroots_collaboration",
+    "social_commitment"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": 4,
+    "participation_pulse": 5,
+    "innovation_pulse": 3
+  }
+}
