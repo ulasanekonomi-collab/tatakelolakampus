@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-018",
+
+  "interaction_type": "organizational_response_discussion",
+
+  "actors": [
+    "administrative_staff",
+    "lecturer",
+    "support_unit"
+  ],
+
+  "narrative": "Persistent uncertainty regarding institutional restructuring generated widespread anxiety that gradually spread across multiple organizational units.",
+
+  "themes": [
+    "uncertainty",
+    "organizational_change",
+    "collective_emotion"
+  ],
+
+  "emotional_signals": [
+    "anxiety",
+    "insecurity"
+  ],
+
+  "organizational_intent": "stabilize institutional climate",
+
+  "dynamics_classification": "emotional_contagion",
+
+  "organizational_signals": [
+    "uncertainty_spread",
+    "collective_stress"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": -3,
+    "participation_pulse": -2,
+    "innovation_pulse": -3
+  }
+}
