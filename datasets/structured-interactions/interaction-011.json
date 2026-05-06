@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-011",
+
+  "interaction_type": "organizational_learning_session",
+
+  "actors": [
+    "lecturer",
+    "students",
+    "curriculum_team"
+  ],
+
+  "narrative": "An open interdisciplinary discussion forum encouraged collaborative curriculum redesign and generated a sense of shared institutional ownership.",
+
+  "themes": [
+    "organizational_learning",
+    "collaboration",
+    "adaptive_culture"
+  ],
+
+  "emotional_signals": [
+    "optimism",
+    "engagement"
+  ],
+
+  "organizational_intent": "strengthen adaptive academic culture",
+
+  "dynamics_classification": "positive_adaptation",
+
+  "organizational_signals": [
+    "shared_ownership",
+    "learning_alignment"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": 4,
+    "participation_pulse": 5,
+    "innovation_pulse": 4
+  }
+}
