@@ -1,1 +1,38 @@
+{
+  "interaction_id": "INT-001",
 
+  "interaction_type": "faculty_discussion",
+
+  "actors": [
+    "dean",
+    "senior_lecturer"
+  ],
+
+  "narrative": "Several lecturers expressed concern that curriculum revisions were conducted without sufficient participatory discussion.",
+
+  "themes": [
+    "participation",
+    "curriculum_governance",
+    "trust"
+  ],
+
+  "emotional_signals": [
+    "concern",
+    "critical_reflection"
+  ],
+
+  "organizational_intent": "increase participatory legitimacy",
+
+  "dynamics_classification": "constructive_divergence",
+
+  "organizational_signals": [
+    "communication_gap",
+    "policy_resistance"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": -2,
+    "participation_pulse": -3,
+    "innovation_pulse": 1
+  }
+}
