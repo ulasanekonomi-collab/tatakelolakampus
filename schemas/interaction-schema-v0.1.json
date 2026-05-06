@@ -1,1 +1,76 @@
+{
+  "schema_version": "0.1",
 
+  "interaction_id": "INT-0001",
+
+  "timestamp": "2026-05-06T10:00:00Z",
+
+  "interaction_type": "informal_discussion",
+
+  "organizational_context": {
+    "institution": "Faculty of Psychology",
+    "unit": "Dean Office",
+    "setting": "informal conversation"
+  },
+
+  "actors": [
+    {
+      "actor_id": "ACT-001",
+      "role": "dean",
+      "organizational_position": "formal_leadership"
+    },
+    {
+      "actor_id": "ACT-002",
+      "role": "senior_lecturer",
+      "organizational_position": "academic_influencer"
+    }
+  ],
+
+  "interaction_content": {
+    "narrative": "Senior lecturer questioned why policy discussions were not initiated through faculty dialogue.",
+    "communication_tone": [
+      "critical",
+      "reflective"
+    ]
+  },
+
+  "organizational_analysis": {
+    "themes": [
+      "participation",
+      "academic_legitimacy",
+      "communication"
+    ],
+
+    "emotional_signals": [
+      "concern",
+      "critical_reflection"
+    ],
+
+    "organizational_intent": "increase participatory legitimacy",
+
+    "organizational_signals": [
+      "participation_gap_signal"
+    ],
+
+    "dynamics_classification": "constructive_divergence"
+  },
+
+  "pulse_impact": {
+    "trust_pulse": -1,
+    "participation_pulse": -4,
+    "energy_pulse": 0,
+    "alignment_pulse": -2,
+    "innovation_pulse": 2
+  },
+
+  "governance_recommendations": [
+    "conduct informal faculty dialogue",
+    "increase participatory communication before policy implementation"
+  ],
+
+  "ethical_flags": {
+    "contains_sensitive_personal_data": false,
+    "requires_anonymization": true,
+    "safe_for_organizational_analysis": true
+  }
+}
