@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-015",
+
+  "interaction_type": "policy_implementation_review",
+
+  "actors": [
+    "administrative_staff",
+    "quality_assurance_team",
+    "faculty_leadership"
+  ],
+
+  "narrative": "Several administrative procedures were formally completed for accreditation purposes, but many staff members privately viewed the process as symbolic compliance without meaningful institutional improvement.",
+
+  "themes": [
+    "bureaucracy",
+    "symbolic_compliance",
+    "institutional_legitimacy"
+  ],
+
+  "emotional_signals": [
+    "cynicism",
+    "fatigue"
+  ],
+
+  "organizational_intent": "improve authentic governance practices",
+
+  "dynamics_classification": "institutional_decoupling",
+
+  "organizational_signals": [
+    "formalism",
+    "compliance_fatigue"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": -3,
+    "participation_pulse": -2,
+    "innovation_pulse": -3
+  }
+}
