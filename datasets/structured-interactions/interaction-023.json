@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-023",
+
+  "interaction_type": "informal_leadership_dynamic",
+
+  "actors": [
+    "senior_lecturer",
+    "junior_lecturer",
+    "student_community"
+  ],
+
+  "narrative": "An informal senior lecturer became a trusted mediator during institutional tensions, helping bridge communication gaps between students and faculty leadership.",
+
+  "themes": [
+    "leadership",
+    "trust",
+    "informal_governance"
+  ],
+
+  "emotional_signals": [
+    "respect",
+    "stability"
+  ],
+
+  "organizational_intent": "strengthen institutional cohesion",
+
+  "dynamics_classification": "informal_leadership",
+
+  "organizational_signals": [
+    "social_bridge",
+    "trust_mediation"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": 5,
+    "participation_pulse": 3,
+    "innovation_pulse": 1
+  }
+}
