@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-008",
+
+  "interaction_type": "digital_transformation_meeting",
+
+  "actors": [
+    "it_team",
+    "administrative_staff",
+    "faculty_leadership"
+  ],
+
+  "narrative": "Administrative staff showed resistance toward the implementation of a new integrated academic information system due to concerns about adaptation difficulties and increased monitoring.",
+
+  "themes": [
+    "digitalization",
+    "organizational_change",
+    "adaptation"
+  ],
+
+  "emotional_signals": [
+    "anxiety",
+    "resistance"
+  ],
+
+  "organizational_intent": "support digital transformation",
+
+  "dynamics_classification": "change_resistance",
+
+  "organizational_signals": [
+    "adaptation_friction",
+    "digital_anxiety"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": -1,
+    "participation_pulse": -1,
+    "innovation_pulse": 1
+  }
+}
