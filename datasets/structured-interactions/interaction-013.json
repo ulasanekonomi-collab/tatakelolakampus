@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-013",
+
+  "interaction_type": "internal_reflection_meeting",
+
+  "actors": [
+    "lecturer",
+    "junior_staff",
+    "faculty_management"
+  ],
+
+  "narrative": "Several junior staff members chose not to express disagreement during formal meetings because they feared negative career consequences and social exclusion.",
+
+  "themes": [
+    "organizational_silence",
+    "power_distance",
+    "institutional_culture"
+  ],
+
+  "emotional_signals": [
+    "fear",
+    "hesitation"
+  ],
+
+  "organizational_intent": "increase psychological safety",
+
+  "dynamics_classification": "silent_compliance",
+
+  "organizational_signals": [
+    "suppressed_feedback",
+    "hierarchical_pressure"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": -3,
+    "participation_pulse": -4,
+    "innovation_pulse": -2
+  }
+}
