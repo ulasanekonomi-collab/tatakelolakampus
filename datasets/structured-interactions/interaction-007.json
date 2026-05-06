@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-007",
+
+  "interaction_type": "academic_workload_discussion",
+
+  "actors": [
+    "lecturer",
+    "department_head",
+    "quality_assurance_team"
+  ],
+
+  "narrative": "Several lecturers expressed exhaustion due to overlapping teaching, accreditation, and administrative responsibilities during the semester evaluation meeting.",
+
+  "themes": [
+    "workload",
+    "academic_burnout",
+    "administration"
+  ],
+
+  "emotional_signals": [
+    "fatigue",
+    "stress"
+  ],
+
+  "organizational_intent": "reduce workload imbalance",
+
+  "dynamics_classification": "organizational_strain",
+
+  "organizational_signals": [
+    "administrative_overload",
+    "burnout_risk"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": -1,
+    "participation_pulse": -2,
+    "innovation_pulse": -2
+  }
+}
