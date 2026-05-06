@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-012",
+
+  "interaction_type": "cross_unit_communication",
+
+  "actors": [
+    "administrative_unit",
+    "academic_unit",
+    "finance_office"
+  ],
+
+  "narrative": "Different administrative units interpreted institutional regulations inconsistently, causing repeated delays and confusion in program implementation.",
+
+  "themes": [
+    "coordination",
+    "communication",
+    "institutional_alignment"
+  ],
+
+  "emotional_signals": [
+    "confusion",
+    "frustration"
+  ],
+
+  "organizational_intent": "improve institutional coordination",
+
+  "dynamics_classification": "fragmented_coordination",
+
+  "organizational_signals": [
+    "interpretation_gap",
+    "coordination_breakdown"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": -2,
+    "participation_pulse": -1,
+    "innovation_pulse": -2
+  }
+}
