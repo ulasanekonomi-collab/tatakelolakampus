@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-017",
+
+  "interaction_type": "institutional_recovery_dialogue",
+
+  "actors": [
+    "faculty_leadership",
+    "lecturer",
+    "student_representative"
+  ],
+
+  "narrative": "After prolonged tension regarding academic policy changes, university leaders initiated open dialogue sessions that gradually restored mutual trust and communication.",
+
+  "themes": [
+    "trust_recovery",
+    "dialogue",
+    "institutional_repair"
+  ],
+
+  "emotional_signals": [
+    "relief",
+    "hope"
+  ],
+
+  "organizational_intent": "restore institutional trust",
+
+  "dynamics_classification": "adaptive_reconciliation",
+
+  "organizational_signals": [
+    "trust_rebuilding",
+    "dialogic_governance"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": 4,
+    "participation_pulse": 3,
+    "innovation_pulse": 2
+  }
+}
