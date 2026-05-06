@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-003",
+
+  "interaction_type": "student_feedback",
+
+  "actors": [
+    "student",
+    "student_association",
+    "academic_advisor"
+  ],
+
+  "narrative": "Student representatives expressed disappointment regarding sudden schedule changes and the lack of transparent academic communication.",
+
+  "themes": [
+    "transparency",
+    "communication",
+    "student_trust"
+  ],
+
+  "emotional_signals": [
+    "disappointment",
+    "confusion"
+  ],
+
+  "organizational_intent": "improve academic transparency",
+
+  "dynamics_classification": "trust_erosion",
+
+  "organizational_signals": [
+    "communication_breakdown",
+    "student_disengagement"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": -3,
+    "participation_pulse": -2,
+    "innovation_pulse": 0
+  }
+}
