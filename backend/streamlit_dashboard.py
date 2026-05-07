@@ -167,7 +167,12 @@ actor_df = pd.DataFrame({
     "Frequency": list(actor_frequency.values())
 })
 
-st.bar_chart(actor_df.set_index("Actor"))
+actor_df = actor_df.sort_values(by="Frequency", ascending=True)
+
+st.bar_chart(
+    actor_df.set_index("Actor"),
+    horizontal=True
+)
 st.divider()
 
 st.subheader("Early Warning System")
