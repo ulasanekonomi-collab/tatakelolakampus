@@ -37,9 +37,10 @@ timeline_data.append({
     "timestamp": timestamp,
     "trust_pulse": pulse_data.get("trust_pulse", 0),
     "participation_pulse": pulse_data.get("participation_pulse", 0),
-    "innovation_pulse": pulse_data.get("innovation_pulse", 0)
+    "innovation_pulse": pulse_data.get("innovation_pulse", 0),
 })
-        interaction_count += 1
+
+interaction_count += 1
 
 st.title("TatakelolaKampus")
 st.subheader("Institutional Governance Dashboard")
