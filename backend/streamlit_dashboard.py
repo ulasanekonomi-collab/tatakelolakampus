@@ -102,7 +102,7 @@ with st.form("interaction_form"):
         "interaction_id": f"INT-{datetime.now().strftime('%Y%m%d%H%M%S')}",
         "timestamp": datetime.now().strftime("%Y-%m-%d"),
         "interaction_type": interaction_type,
-        "actors": [a.strip() for a in actors.split(",")],
+        "actors": actors,
         "narrative": narrative,
 
         "pulse_impact": {
