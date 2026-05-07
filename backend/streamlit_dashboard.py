@@ -6,6 +6,7 @@ import pandas as pd
 from itertools import combinations
 DATASET_DIR = "../datasets/structured-interactions"
 actor_frequency = {}
+actor_connections = {}
 pulse_totals = {
     "trust_pulse": 0,
     "participation_pulse": 0,
@@ -30,7 +31,9 @@ for filename in os.listdir(DATASET_DIR):
 
         for actor in actors:
             actor_frequency[actor] = actor_frequency.get(actor, 0) + 1
+        for pair in combinations(sorted(actors), 2):
 
+        actor_connections[pair] = actor_connections.get(pair, 0) + 1
         pulse_data = data.get("pulse_impact", {})
         timestamp = data.get("timestamp", "Unknown")
 
@@ -198,3 +201,26 @@ if (
     and pulse_totals["innovation_pulse"] > -10
 ):
     st.success("✅ No major institutional governance threats detected.")
+st.divider()
+
+st.subheader("Governance Network Map")
+
+connection_data = []
+
+for pair, weight in actor_connections.items():
+
+    connection_data.append({
+        "Actor Pair": f"{pair[0]} ↔ {pair[1]}",
+        "Frequency": weight
+    })
+
+connection_df = pd.DataFrame(connection_data)
+
+if not connection_df.empty:
+
+    top_connections = connection_df.sort_values(
+        by="Frequency",
+        ascending=False
+    ).head(15)
+
+    st.dataframe(top_connections)
