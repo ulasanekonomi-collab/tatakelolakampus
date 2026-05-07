@@ -124,3 +124,15 @@ health_score = 100 + (
 health_score = max(0, min(100, health_score))
 
 st.metric("Institutional Health", f"{health_score}/100")
+st.divider()
+
+st.subheader("Institutional Risk Level")
+
+if health_score >= 85:
+    st.success("LOW RISK — Institutional governance is healthy and adaptive.")
+
+elif health_score >= 70:
+    st.warning("MODERATE RISK — Some governance tensions require attention.")
+
+else:
+    st.error("HIGH RISK — Institutional instability indicators are escalating.")
