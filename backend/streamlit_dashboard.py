@@ -96,6 +96,40 @@ with st.form("interaction_form"):
     submitted = st.form_submit_button(
         "Save Interaction"
     )
+    if submitted:
+
+    actors = [
+        a.strip()
+        for a in actors_input.split(",")
+    ]
+
+    new_data = {
+        "interaction_id": f"INT-{datetime.now().strftime('%Y%m%d%H%M%S')}",
+
+        "timestamp": datetime.now().strftime("%Y-%m-%d"),
+
+        "interaction_type": interaction_type,
+
+        "actors": actors,
+
+        "narrative": narrative,
+
+        "pulse_impact": {
+            "trust_pulse": trust_pulse,
+            "participation_pulse": participation_pulse,
+            "innovation_pulse": innovation_pulse
+        }
+    }
+
+    filename = (
+        f"{DATASET_DIR}/interaction-"
+        f"{datetime.now().strftime('%Y%m%d%H%M%S')}.json"
+    )
+
+    with open(filename, "w", encoding="utf-8") as f:
+        json.dump(new_data, f, indent=4)
+
+    st.success("Interaction saved successfully!")
 st.subheader("Institutional Governance Dashboard")
 for key, value in pulse_totals.items():
 
