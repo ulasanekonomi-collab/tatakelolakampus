@@ -36,7 +36,16 @@ for filename in os.listdir(DATASET_DIR):
 
 st.title("TatakelolaKampus")
 st.subheader("Institutional Governance Dashboard")
+for key, value in pulse_totals.items():
 
+    if value <= -5:
+        st.error(f"{key}: CRITICAL ({value})")
+
+    elif value < 0:
+        st.warning(f"{key}: WARNING ({value})")
+
+    else:
+        st.success(f"{key}: STABLE ({value})")
 st.metric("Total Interactions", interaction_count)
 
 st.divider()
