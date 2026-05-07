@@ -17,6 +17,7 @@ pulse_totals = {
 interaction_count = 0
 
 timeline_data = []
+
 for filename in os.listdir(DATASET_DIR):
     if filename.endswith(".json"):
 
@@ -24,26 +25,26 @@ for filename in os.listdir(DATASET_DIR):
 
         with open(filepath, "r", encoding="utf-8") as file:
             data = json.load(file)
-actors = data.get("actors", [])
 
-for actor in actors:
-    actor_frequency[actor] = actor_frequency.get(actor, 0) + 1            
-        #st.write(data)
+        actors = data.get("actors", [])
+
+        for actor in actors:
+            actor_frequency[actor] = actor_frequency.get(actor, 0) + 1
 
         pulse_data = data.get("pulse_impact", {})
         timestamp = data.get("timestamp", "Unknown")
-#        st.write(pulse_data)
 
         for key in pulse_totals:
             pulse_totals[key] += pulse_data.get(key, 0)
-timeline_data.append({
-    "timestamp": timestamp,
-    "trust_pulse": pulse_data.get("trust_pulse", 0),
-    "participation_pulse": pulse_data.get("participation_pulse", 0),
-    "innovation_pulse": pulse_data.get("innovation_pulse", 0),
-})
 
-interaction_count += 1
+        timeline_data.append({
+            "timestamp": timestamp,
+            "trust_pulse": pulse_data.get("trust_pulse", 0),
+            "participation_pulse": pulse_data.get("participation_pulse", 0),
+            "innovation_pulse": pulse_data.get("innovation_pulse", 0),
+        })
+
+        interaction_count += 1
 
 st.title("TatakelolaKampus")
 st.subheader("Institutional Governance Dashboard")
