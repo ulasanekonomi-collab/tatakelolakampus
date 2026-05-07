@@ -109,3 +109,18 @@ if (
     st.success(
         "Institutional governance climate remains relatively stable and collaborative."
     )
+st.divider()
+
+st.subheader("Institutional Health Score")
+
+health_score = 100 + (
+    pulse_totals["trust_pulse"]
+    + pulse_totals["participation_pulse"]
+    + pulse_totals["innovation_pulse"]
+    + pulse_totals["coordination_pulse"]
+    - abs(pulse_totals["fatigue_pulse"])
+)
+
+health_score = max(0, min(100, health_score))
+
+st.metric("Institutional Health", f"{health_score}/100")
