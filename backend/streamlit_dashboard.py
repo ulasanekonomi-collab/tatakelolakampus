@@ -26,7 +26,7 @@ for filename in os.listdir(DATASET_DIR):
         #st.write(data)
 
         pulse_data = data.get("pulse_impact", {})
-        st.write(pulse_data)
+#        st.write(pulse_data)
 
         for key in pulse_totals:
             pulse_totals[key] += pulse_data.get(key, 0)
