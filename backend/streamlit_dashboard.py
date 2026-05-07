@@ -67,7 +67,25 @@ for key, value in pulse_totals.items():
 st.divider()
 
 st.subheader("Institutional Pulse Overview")
+st.divider()
 
+st.subheader("Governance Heatmap")
+
+for key, value in pulse_totals.items():
+
+    if value <= -5:
+        color = "🔴 CRITICAL"
+
+    elif value < 0:
+        color = "🟡 WARNING"
+
+    else:
+        color = "🟢 STABLE"
+
+    st.markdown(f"### {key}")
+    st.progress((value + 10) / 20)
+
+    st.write(f"Status: {color} ({value})")
 pulse_df = pd.DataFrame({
     "Pulse": list(pulse_totals.keys()),
     "Score": list(pulse_totals.values())
