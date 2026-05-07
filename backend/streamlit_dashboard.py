@@ -168,3 +168,28 @@ actor_df = pd.DataFrame({
 })
 
 st.bar_chart(actor_df.set_index("Actor"))
+st.divider()
+
+st.subheader("Early Warning System")
+
+if pulse_totals["trust_pulse"] <= -10:
+    st.error("⚠️ Institutional Trust Collapse Risk")
+
+if pulse_totals["participation_pulse"] <= -10:
+    st.warning("⚠️ Participation Crisis Emerging")
+
+if pulse_totals["innovation_pulse"] <= -10:
+    st.warning("⚠️ Innovation Stagnation Risk")
+
+if pulse_totals["fatigue_pulse"] >= 8:
+    st.error("⚠️ Organizational Fatigue Critical")
+
+if pulse_totals["coordination_pulse"] <= -8:
+    st.warning("⚠️ Coordination Breakdown Detected")
+
+if (
+    pulse_totals["trust_pulse"] > -10
+    and pulse_totals["participation_pulse"] > -10
+    and pulse_totals["innovation_pulse"] > -10
+):
+    st.success("✅ No major institutional governance threats detected.")
