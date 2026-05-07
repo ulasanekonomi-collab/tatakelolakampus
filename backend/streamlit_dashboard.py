@@ -21,6 +21,7 @@ for filename in os.listdir(DATASET_DIR):
 
         with open(filepath, "r", encoding="utf-8") as file:
             data = json.load(file)
+            st.write(data)
 
         pulse_data = data.get("pulse_impact", {})
 
