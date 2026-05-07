@@ -98,6 +98,32 @@ with st.form("interaction_form"):
     )
     if submitted:
 
+    interaction_data = {
+        "interaction_id": f"INT-{datetime.now().strftime('%Y%m%d%H%M%S')}",
+        "timestamp": datetime.now().strftime("%Y-%m-%d"),
+        "interaction_type": interaction_type,
+        "actors": [a.strip() for a in actors.split(",")],
+        "narrative": narrative,
+
+        "pulse_impact": {
+            "trust_pulse": trust_pulse,
+            "participation_pulse": participation_pulse,
+            "innovation_pulse": innovation_pulse
+        }
+    }
+
+    filename = f"interaction-{datetime.now().strftime('%Y%m%d%H%M%S')}.json"
+
+    save_path = os.path.join(DATASET_DIR, filename)
+
+    with open(save_path, "w", encoding="utf-8") as f:
+        json.dump(interaction_data, f, indent=4)
+
+    st.success("Interaction saved successfully!")
+
+    st.rerun()
+    if submitted:
+
     actors = [
         a.strip()
         for a in actors_input.split(",")
