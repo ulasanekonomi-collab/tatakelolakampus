@@ -27,15 +27,15 @@ for filename in os.listdir(DATASET_DIR):
         with open(filepath, "r", encoding="utf-8") as file:
             data = json.load(file)
 
-actors = data.get("actors", [])
+        actors = data.get("actors", [])
 
-for actor in actors:
-    actor_frequency[actor] = actor_frequency.get(actor, 0) + 1
+        for actor in actors:
+            actor_frequency[actor] = actor_frequency.get(actor, 0) + 1
 
-for pair in combinations(sorted(actors), 2):
-    actor_connections[pair] = actor_connections.get(pair, 0) + 1
+        for pair in combinations(sorted(actors), 2):
+            actor_connections[pair] = actor_connections.get(pair, 0) + 1
 
-pulse_data = data.get("pulse_impact", {})
+        pulse_data = data.get("pulse_impact", {})
         timestamp = data.get("timestamp", "Unknown")
 
         for key in pulse_totals:
