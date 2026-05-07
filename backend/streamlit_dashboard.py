@@ -22,7 +22,7 @@ for filename in os.listdir(DATASET_DIR):
         with open(filepath, "r", encoding="utf-8") as file:
             data = json.load(file)
 
-        pulse_data = data.get("pulse_index", {})
+        pulse_data = data.get("pulse_impact", {})
 
         for key in pulse_totals:
             pulse_totals[key] += pulse_data.get(key, 0)
