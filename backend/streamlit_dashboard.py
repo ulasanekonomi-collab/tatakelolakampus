@@ -2,6 +2,7 @@ import streamlit as st
 st.title("dikembangkan oleh Yuhka Sundaya")
 import json
 import os
+import pandas as pd
 
 DATASET_DIR = "../datasets/structured-interactions"
 
@@ -42,3 +43,13 @@ st.divider()
 
 for key, value in pulse_totals.items():
     st.metric(key, value)
+st.divider()
+
+st.subheader("Institutional Pulse Overview")
+
+pulse_df = pd.DataFrame({
+    "Pulse": list(pulse_totals.keys()),
+    "Score": list(pulse_totals.values())
+})
+
+st.bar_chart(pulse_df.set_index("Pulse"))
