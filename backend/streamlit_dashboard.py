@@ -83,3 +83,29 @@ st.line_chart(
         ["trust_pulse", "participation_pulse", "innovation_pulse"]
     ]
 )
+st.divider()
+
+st.subheader("AI Institutional Interpretation")
+
+if pulse_totals["trust_pulse"] <= -5:
+    st.error(
+        "Trust institutional climate is deteriorating. Internal legitimacy and confidence are weakening."
+    )
+
+if pulse_totals["participation_pulse"] <= -5:
+    st.warning(
+        "Participation deficit detected. Institutional actors may feel excluded from governance processes."
+    )
+
+if pulse_totals["innovation_pulse"] <= -5:
+    st.warning(
+        "Innovation stagnation detected. Organizational creativity and adaptive capacity are declining."
+    )
+
+if (
+    pulse_totals["trust_pulse"] >= 0
+    and pulse_totals["participation_pulse"] >= 0
+):
+    st.success(
+        "Institutional governance climate remains relatively stable and collaborative."
+    )
