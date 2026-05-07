@@ -1,4 +1,5 @@
 import streamlit as st
+st.title("dikembangkan oleh Yuhka Sundaya")
 import json
 import os
 
