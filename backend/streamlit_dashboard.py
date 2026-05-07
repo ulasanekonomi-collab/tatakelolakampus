@@ -166,7 +166,8 @@ for key, value in pulse_totals.items():
         color = "🟢 STABLE"
 
     st.markdown(f"### {key}")
-    st.progress((value + 10) / 20)
+    progress_value = max(0.0, min(1.0, (value + 10) / 20))
+    st.progress(progress_value)
 
     st.write(f"Status: {color} ({value})")
 pulse_df = pd.DataFrame({
