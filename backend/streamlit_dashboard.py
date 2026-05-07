@@ -364,3 +364,42 @@ if recommendations:
 
 else:
     st.success("Institutional governance conditions appear adaptive and stable.")
+st.divider()
+
+st.subheader("What Makes TataKelolaKampus Different?")
+
+st.markdown("""
+
+### 🧠 General AI vs Institutional Governance AI
+
+| General AI (ChatGPT, Gemini) | TataKelolaKampus |
+|---|---|
+| General-purpose AI | Specialized governance intelligence |
+| Generates generic responses | Reads institutional dynamics |
+| No institutional memory | Accumulates governance history |
+| No actor mapping | Governance network analytics |
+| No pulse analysis | Institutional pulse engine |
+| No governance warning system | Early Warning System |
+| No organizational diagnostics | AI Governance Diagnostics |
+| No realtime governance sensing | Live institutional monitoring |
+
+### 🏛️ TataKelolaKampus Focus
+
+TataKelolaKampus is designed as:
+
+- Institutional Governance Intelligence System
+- Computational Governance Observatory
+- Organizational Pulse Monitoring Platform
+- AI-Assisted Governance Analytics Engine
+
+The system analyzes:
+
+- institutional trust,
+- participation dynamics,
+- innovation climate,
+- governance risk,
+- actor relationships,
+- organizational coordination,
+- institutional memory accumulation.
+
+""")
