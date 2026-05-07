@@ -1,9 +1,9 @@
 import streamlit as st
-st.title("dikembangkan oleh Yuhka Sundaya")
 import json
 import os
 import pandas as pd
 from itertools import combinations
+from datetime import datetime
 DATASET_DIR = "../datasets/structured-interactions"
 actor_frequency = {}
 actor_connections = {}
@@ -51,6 +51,51 @@ for filename in os.listdir(DATASET_DIR):
         interaction_count += 1
 
 st.title("TatakelolaKampus")
+
+st.subheader("Input Governance Interaction")
+
+with st.form("interaction_form"):
+
+    interaction_type = st.selectbox(
+        "Interaction Type",
+        [
+            "policy_discussion",
+            "innovation_meeting",
+            "student_feedback",
+            "organizational_conflict",
+            "curriculum_review"
+        ]
+    )
+
+    actors_input = st.text_input(
+        "Actors (pisahkan dengan koma)",
+        "lecturer, student"
+    )
+
+    narrative = st.text_area(
+        "Narrative",
+        "Describe the governance interaction..."
+    )
+
+    trust_pulse = st.slider("Trust Pulse", -5, 5, 0)
+
+    participation_pulse = st.slider(
+        "Participation Pulse",
+        -5,
+        5,
+        0
+    )
+
+    innovation_pulse = st.slider(
+        "Innovation Pulse",
+        -5,
+        5,
+        0
+    )
+
+    submitted = st.form_submit_button(
+        "Save Interaction"
+    )
 st.subheader("Institutional Governance Dashboard")
 for key, value in pulse_totals.items():
 
