@@ -5,7 +5,7 @@ import os
 import pandas as pd
 
 DATASET_DIR = "../datasets/structured-interactions"
-
+actor_frequency = {}
 pulse_totals = {
     "trust_pulse": 0,
     "participation_pulse": 0,
@@ -24,7 +24,10 @@ for filename in os.listdir(DATASET_DIR):
 
         with open(filepath, "r", encoding="utf-8") as file:
             data = json.load(file)
-            
+actors = data.get("actors", [])
+
+for actor in actors:
+    actor_frequency[actor] = actor_frequency.get(actor, 0) + 1            
         #st.write(data)
 
         pulse_data = data.get("pulse_impact", {})
@@ -136,3 +139,13 @@ elif health_score >= 70:
 
 else:
     st.error("HIGH RISK — Institutional instability indicators are escalating.")
+st.divider()
+
+st.subheader("Institutional Actor Activity")
+
+actor_df = pd.DataFrame({
+    "Actor": list(actor_frequency.keys()),
+    "Frequency": list(actor_frequency.values())
+})
+
+st.bar_chart(actor_df.set_index("Actor"))
