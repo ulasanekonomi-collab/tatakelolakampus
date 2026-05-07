@@ -331,3 +331,36 @@ if not connection_df.empty:
     ).head(15)
 
     st.dataframe(top_connections)
+st.divider()
+
+st.subheader("AI Governance Recommendation Engine")
+
+recommendations = []
+
+if pulse_totals["trust_pulse"] < -5:
+    recommendations.append(
+        "Increase institutional trust-building dialogue between actors."
+    )
+
+if pulse_totals["participation_pulse"] < -5:
+    recommendations.append(
+        "Expand participatory governance mechanisms and stakeholder inclusion."
+    )
+
+if pulse_totals["innovation_pulse"] < -5:
+    recommendations.append(
+        "Encourage innovation labs and adaptive governance initiatives."
+    )
+
+if len(actor_frequency) > 20:
+    recommendations.append(
+        "Governance network is highly fragmented. Improve coordination structures."
+    )
+
+if recommendations:
+
+    for rec in recommendations:
+        st.warning(rec)
+
+else:
+    st.success("Institutional governance conditions appear adaptive and stable.")
