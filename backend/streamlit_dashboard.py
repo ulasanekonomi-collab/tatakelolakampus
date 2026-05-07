@@ -69,3 +69,16 @@ pulse_df = pd.DataFrame({
 })
 
 st.bar_chart(pulse_df.set_index("Pulse"))
+st.divider()
+
+st.subheader("Institutional Pulse Timeline")
+
+timeline_df = pd.DataFrame(timeline_data)
+
+timeline_df = timeline_df.sort_values("timestamp")
+
+st.line_chart(
+    timeline_df.set_index("timestamp")[
+        ["trust_pulse", "participation_pulse", "innovation_pulse"]
+    ]
+)
