@@ -53,7 +53,7 @@ for filename in os.listdir(DATASET_DIR):
 col1, col2 = st.columns([1,4])
 
 with col1:
-    st.image("assets/yuhka.jpg", width=120)
+    st.image("assets/Yuhka-Sundaya.png", width=120)
 
 with col2:
     st.title("TatakelolaKampus")
