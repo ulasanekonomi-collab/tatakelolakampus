@@ -83,7 +83,7 @@ with col1:
     st.image("assets/Yuhka-Sundaya.png", width=120)
 
 with col2:
-    st.title("TatakelolaKampus")
+    st.title("Campus Governance Intelligence")
     st.caption(
         "Developed by Yuhka Sundaya · Ekonomi Pembangunan UNISBA"
     )
