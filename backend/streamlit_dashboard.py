@@ -2,10 +2,6 @@ import streamlit as st
 import json
 import os
 import pandas as pd
-st.set_page_config(
-    page_title="TatakelolaKampus AI",
-    layout="wide"
-)
 from itertools import combinations
 from datetime import datetime
 DATASET_DIR = "datasets/structured-interactions"
