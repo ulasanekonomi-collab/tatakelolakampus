@@ -51,7 +51,7 @@ for filename in os.listdir(DATASET_DIR):
         interaction_count += 1
 
 st.title("TatakelolaKampus")
-
+st.caption("Developed by Yuhka Sundaya, Ekonomi Pembangunan Unisba")
 st.subheader("Input Governance Interaction")
 
 with st.form("interaction_form"):
