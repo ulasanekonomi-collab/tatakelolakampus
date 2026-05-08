@@ -470,7 +470,7 @@ st.markdown("""
 
 ### 🧠 General AI vs Institutional Governance AI
 
-| General AI | TataKelolaKampus |
+| General AI | Campus Governance Intelligence |
 |---|---|
 | General-purpose AI | Governance intelligence |
 | Generic responses | Institutional diagnostics |
