@@ -479,7 +479,7 @@ st.markdown("""
 | No actor mapping | Network governance analysis |
 | No early warning system | Governance risk engine |
 
-### 🏛️ TataKelolaKampus Focus
+### 🏛️ Campus Governance Intelligence Focus
 
 - Institutional Governance Intelligence
 - Organizational Pulse Monitoring
