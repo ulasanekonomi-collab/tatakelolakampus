@@ -57,10 +57,10 @@ with col1:
 
 with col2:
     st.title("TatakelolaKampus")
-        st.caption("Developed by Yuhka Sundaya · Ekonomi Pembangunan UNISBA")
-        left_col, middle_col, right_col = st.columns([2,1,1])
-        with left_col:
-            st.subheader("Input Governance Interaction")
+    st.caption("Developed by Yuhka Sundaya · Ekonomi Pembangunan UNISBA")
+    left_col, middle_col, right_col = st.columns([2,1,1])
+    with left_col:
+        st.subheader("Input Governance Interaction")
 
             with st.form("interaction_form"):
 
