@@ -58,13 +58,14 @@ with col1:
 with col2:
     st.title("TatakelolaKampus")
     st.caption("Developed by Yuhka Sundaya · Ekonomi Pembangunan UNISBA")
-    left_col, middle_col, right_col = st.columns([2,1,1])
-    with left_col:
-        st.subheader("Input Governance Interaction")
 
-            with st.form("interaction_form"):
+left_col, middle_col, right_col = st.columns([2,1,1])
 
-                interaction_type = st.selectbox(
+with left_col:
+    st.subheader("Input Governance Interaction")
+
+    with st.form("interaction_form"):
+        interaction_type = st.selectbox(
                     "Interaction Type",
                     [
                         "policy_discussion",
