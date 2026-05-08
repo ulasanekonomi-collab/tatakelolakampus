@@ -464,7 +464,7 @@ else:
 
 st.divider()
 
-st.subheader("What Makes TataKelolaKampus Different?")
+st.subheader("What MakesCampus Governance Intelligence Different?")
 
 st.markdown("""
 
