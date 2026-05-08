@@ -117,16 +117,16 @@ with st.form("interaction_form"):
         save_path = os.path.join(DATASET_DIR, filename)
 
         with open(save_path, "w", encoding="utf-8") as f:
-        json.dump(interaction_data, f, indent=4)
+             json.dump(interaction_data, f, indent=4)
 
         st.success("Interaction saved successfully!")
 
         with open(save_path, "w", encoding="utf-8") as f:
-        json.dump(interaction_data, f, indent=4)
+             json.dump(interaction_data, f, indent=4)
 
-    st.success("Interaction saved successfully!")
+        st.success("Interaction saved successfully!")
 
-    st.rerun()
+        st.rerun()
     
 st.subheader("Institutional Governance Dashboard")
 for key, value in pulse_totals.items():
