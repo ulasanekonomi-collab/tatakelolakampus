@@ -64,16 +64,16 @@ with col2:
 
         with st.form("interaction_form"):
 
-    interaction_type = st.selectbox(
-        "Interaction Type",
-        [
-            "policy_discussion",
-            "innovation_meeting",
-            "student_feedback",
-            "organizational_conflict",
-            "curriculum_review"
-        ]
-    )
+            interaction_type = st.selectbox(
+                "Interaction Type",
+                [
+                    "policy_discussion",
+                    "innovation_meeting",
+                    "student_feedback",
+                    "organizational_conflict",
+                    "curriculum_review"
+                ]
+        )
 
     actors_input = st.text_input(
         "Actors (pisahkan dengan koma)",
