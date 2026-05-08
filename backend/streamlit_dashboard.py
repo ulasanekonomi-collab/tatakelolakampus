@@ -98,7 +98,7 @@ with st.form("interaction_form"):
     )
     if submitted:
 
-    interaction_data = {
+        interaction_data = {
         "interaction_id": f"INT-{datetime.now().strftime('%Y%m%d%H%M%S')}",
         "timestamp": datetime.now().strftime("%Y-%m-%d"),
         "interaction_type": interaction_type,
@@ -112,21 +112,21 @@ with st.form("interaction_form"):
         }
     }
 
-    filename = f"interaction-{datetime.now().strftime('%Y%m%d%H%M%S')}.json"
+        filename = f"interaction-{datetime.now().strftime('%Y%m%d%H%M%S')}.json"
 
-    save_path = os.path.join(DATASET_DIR, filename)
+        save_path = os.path.join(DATASET_DIR, filename)
 
-    with open(save_path, "w", encoding="utf-8") as f:
+        with open(save_path, "w", encoding="utf-8") as f:
+        json.dump(interaction_data, f, indent=4)
+
+        st.success("Interaction saved successfully!")
+
+        with open(save_path, "w", encoding="utf-8") as f:
         json.dump(interaction_data, f, indent=4)
 
     st.success("Interaction saved successfully!")
 
-    with open(save_path, "w", encoding="utf-8") as f:
-    json.dump(interaction_data, f, indent=4)
-
-st.success("Interaction saved successfully!")
-
-st.rerun()
+    st.rerun()
     
 st.subheader("Institutional Governance Dashboard")
 for key, value in pulse_totals.items():
