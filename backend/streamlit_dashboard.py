@@ -50,8 +50,14 @@ for filename in os.listdir(DATASET_DIR):
 
         interaction_count += 1
 
-st.title("TatakelolaKampus")
-st.caption("Developed by Yuhka Sundaya, Ekonomi Pembangunan Unisba")
+col1, col2 = st.columns([1,4])
+
+with col1:
+    st.image("assets/yuhka.jpg", width=120)
+
+with col2:
+    st.title("TatakelolaKampus")
+    st.caption("Developed by Yuhka Sundaya · Ekonomi Pembangunan UNISBA")
 st.subheader("Input Governance Interaction")
 
 with st.form("interaction_form"):
