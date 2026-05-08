@@ -199,7 +199,19 @@ with left_col:
 # =========================================================
 
 with middle_col:
+    if st.button("🗑 Reset Institutional Data"):
 
+        for filename in os.listdir(DATASET_DIR):
+
+            file_path = os.path.join(DATASET_DIR, filename)
+
+            if os.path.isfile(file_path):
+
+                os.remove(file_path)
+
+        st.warning("All institutional interaction data has been reset.")
+
+        st.rerun()
     st.subheader("Institutional Governance Dashboard")
 
     for key, value in pulse_totals.items():
