@@ -115,10 +115,23 @@ with left_col:
             ]
         )
 
-        actors_input = st.text_input(
-            "Actors (pisahkan dengan koma)",
-            "lecturer, student"
-        )
+       actor_options = [
+           "Rector",
+           "Dean",
+           "Lecturer",
+           "Student",
+           "Administrative Staff",
+           "Quality Assurance Team",
+           "Faculty Senate",
+           "Student Organization",
+           "Community Partners"
+      ]
+
+      actors = st.multiselect(
+          "Select Institutional Actors",
+          actor_options,
+          default=["Lecturer", "Student"]
+      )
 
         narrative = st.text_area(
             "Narrative",
@@ -152,10 +165,7 @@ with left_col:
 
     if submitted:
 
-        actors = [
-            actor.strip()
-            for actor in actors_input.split(",")
-        ]
+    
 
         interaction_data = {
             "interaction_id":
