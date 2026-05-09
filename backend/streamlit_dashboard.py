@@ -41,14 +41,18 @@ timeline_data = []
 if not os.path.exists(DATASET_DIR):
     os.makedirs(DATASET_DIR)
 
-for filename in os.listdir(DATASET_DIR):
+interaction_files = [
+    f for f in os.listdir(DATASET_DIR)
+    if f.endswith(".json")
+    and f.startswith("interaction-")
+]
 
-    if filename.endswith(".json"):
+for filename in interaction_files:
 
-        filepath = os.path.join(DATASET_DIR, filename)
+    filepath = os.path.join(DATASET_DIR, filename)
 
-        with open(filepath, "r", encoding="utf-8") as file:
-            data = json.load(file)
+    with open(filepath, "r", encoding="utf-8") as file:
+        data = json.load(file)
 
         actors = data.get("actors", [])
 
