@@ -205,42 +205,50 @@ if "coordination" in narrative_lower:
 
 if "miscommunication" in narrative_lower:
     coordination_pulse -= 2
-        interaction_data = {
-            "interaction_id":
-                f"INT-{datetime.now().strftime('%Y%m%d%H%M%S')}",
 
-            "timestamp":
-                datetime.now().strftime("%Y-%m-%d"),
 
-            "interaction_type":
-                interaction_type,
+interaction_data = {
 
-            "actors":
-                actors,
+    "interaction_id":
+        f"INT-{datetime.now().strftime('%Y%m%d%H%M%S')}",
 
-            "narrative":
-                narrative,
+    "timestamp":
+        datetime.now().strftime("%Y-%m-%d"),
 
-            "pulse_impact": {
-                "trust_pulse": trust_pulse,
-                "participation_pulse": participation_pulse,
-                "innovation_pulse": innovation_pulse
-            }
-        }
+    "interaction_type":
+        interaction_type,
 
-        filename = (
-            f"interaction-"
-            f"{datetime.now().strftime('%Y%m%d%H%M%S')}.json"
-        )
+    "actors":
+        actors,
 
-        save_path = os.path.join(DATASET_DIR, filename)
+    "narrative":
+        narrative,
 
-        with open(save_path, "w", encoding="utf-8") as f:
-            json.dump(interaction_data, f, indent=4)
+    "pulse_impact": {
 
-        st.success("Interaction saved successfully!")
+        "trust_pulse": trust_pulse,
 
-        st.rerun()
+        "participation_pulse": participation_pulse,
+
+        "innovation_pulse": innovation_pulse
+
+    }
+
+}
+
+filename = (
+    f"interaction-"
+    f"{datetime.now().strftime('%Y%m%d%H%M%S')}.json"
+)
+
+save_path = os.path.join(DATASET_DIR, filename)
+
+with open(save_path, "w", encoding="utf-8") as f:
+    json.dump(interaction_data, f, indent=4)
+
+st.success("Interaction saved successfully!")
+
+st.rerun()
 
 # =========================================================
 # MIDDLE PANEL — DASHBOARD
