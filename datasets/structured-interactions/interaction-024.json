@@ -1,0 +1,39 @@
+{
+  "interaction_id": "INT-024",
+  "timestamp": "2026-05-04",
+  "interaction_type": "workload_reflection",
+
+  "actors": [
+    "lecturer",
+    "administrative_staff",
+    "quality_assurance_team"
+  ],
+
+  "narrative": "Continuous accreditation cycles and overlapping reporting obligations caused many academic staff members to experience exhaustion and declining motivation.",
+
+  "themes": [
+    "burnout",
+    "workload",
+    "institutional_pressure"
+  ],
+
+  "emotional_signals": [
+    "fatigue",
+    "emotional_exhaustion"
+  ],
+
+  "organizational_intent": "reduce systemic overload",
+
+  "dynamics_classification": "institutional_burnout",
+
+  "organizational_signals": [
+    "reporting_overload",
+    "administrative_fatigue"
+  ],
+
+  "pulse_impact": {
+    "trust_pulse": -2,
+    "participation_pulse": -4,
+    "innovation_pulse": -3
+  }
+}
