@@ -41,18 +41,14 @@ timeline_data = []
 if not os.path.exists(DATASET_DIR):
     os.makedirs(DATASET_DIR)
 
-interaction_files = [
-    f for f in os.listdir(DATASET_DIR)
-    if f.endswith(".json")
-    and f.startswith("interaction-")
-]
+for filename in os.listdir(DATASET_DIR):
 
-for filename in interaction_files:
+    if filename.endswith(".json"):
 
-    filepath = os.path.join(DATASET_DIR, filename)
+        filepath = os.path.join(DATASET_DIR, filename)
 
-    with open(filepath, "r", encoding="utf-8") as file:
-        data = json.load(file)
+        with open(filepath, "r", encoding="utf-8") as file:
+            data = json.load(file)
 
         actors = data.get("actors", [])
 
@@ -160,99 +156,43 @@ with left_col:
             actor.strip()
             for actor in actors_input.split(",")
         ]
-        # =========================================
-        # NARRATIVE INTELLIGENCE ENGINE
-        # =========================================
-
-        narrative_lower = narrative.lower()
-
-        # Trust Pulse Intelligence
-        if "conflict" in narrative_lower:
-            trust_pulse -= 2
-
-        if "transparent" in narrative_lower:
-            trust_pulse += 2
-
-        if "distrust" in narrative_lower:
-            trust_pulse -= 3
-
-        # Participation Intelligence
-        if "excluded" in narrative_lower:
-            participation_pulse -= 2
-
-        if "collaboration" in narrative_lower:
-            participation_pulse += 2
-
-        if "participation" in narrative_lower:
-            participation_pulse += 1
-
-        # Innovation Intelligence
-        if "innovation" in narrative_lower:
-            innovation_pulse += 2
-
-        if "stagnation" in narrative_lower:
-            innovation_pulse -= 2
-
-        if "creative" in narrative_lower:
-            innovation_pulse += 1
-
-        # Fatigue Intelligence
-        if "burnout" in narrative_lower:
-            fatigue_pulse -= 2
-
-        if "overwork" in narrative_lower:
-            fatigue_pulse -= 2
-
-        # Coordination Intelligence
-        if "coordination" in narrative_lower:
-            coordination_pulse += 2
-
-        if "miscommunication" in narrative_lower:
-            coordination_pulse -= 2
-
 
         interaction_data = {
-
             "interaction_id":
                 f"INT-{datetime.now().strftime('%Y%m%d%H%M%S')}",
 
-        "timestamp":
-            datetime.now().strftime("%Y-%m-%d"),
+            "timestamp":
+                datetime.now().strftime("%Y-%m-%d"),
 
-        "interaction_type":
-            interaction_type,
+            "interaction_type":
+                interaction_type,
 
-        "actors":
-            actors,
+            "actors":
+                actors,
 
-        "narrative":
-            narrative,
+            "narrative":
+                narrative,
 
-        "pulse_impact": {
-
-        "trust_pulse": trust_pulse,
-
-        "participation_pulse": participation_pulse,
-
-        "innovation_pulse": innovation_pulse
-
+            "pulse_impact": {
+                "trust_pulse": trust_pulse,
+                "participation_pulse": participation_pulse,
+                "innovation_pulse": innovation_pulse
+            }
         }
 
-    }
+        filename = (
+            f"interaction-"
+            f"{datetime.now().strftime('%Y%m%d%H%M%S')}.json"
+        )
 
-    filename = (
-        f"interaction-"
-        f"{datetime.now().strftime('%Y%m%d%H%M%S')}.json"
-    )
+        save_path = os.path.join(DATASET_DIR, filename)
 
-    save_path = os.path.join(DATASET_DIR, filename)
+        with open(save_path, "w", encoding="utf-8") as f:
+            json.dump(interaction_data, f, indent=4)
 
-    with open(save_path, "w", encoding="utf-8") as f:
-        json.dump(interaction_data, f, indent=4)
+        st.success("Interaction saved successfully!")
 
-    st.success("Interaction saved successfully!")
-
-    st.rerun()
+        st.rerun()
 
 # =========================================================
 # MIDDLE PANEL — DASHBOARD
