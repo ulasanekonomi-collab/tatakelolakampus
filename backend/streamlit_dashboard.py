@@ -115,23 +115,23 @@ with left_col:
             ]
         )
 
-       actor_options = [
-           "Rector",
-           "Dean",
-           "Lecturer",
-           "Student",
-           "Administrative Staff",
-           "Quality Assurance Team",
-           "Faculty Senate",
-           "Student Organization",
-           "Community Partners"
-      ]
+        actor_options = [
+            "Rector",
+            "Dean",
+            "Lecturer",
+            "Student",
+            "Administrative Staff",
+            "Quality Assurance Team",
+            "Faculty Senate",
+            "Student Organization",
+            "Community Partners"
+        ]
 
-      actors = st.multiselect(
-          "Select Institutional Actors",
-          actor_options,
-          default=["Lecturer", "Student"]
-      )
+        actors = st.multiselect(
+            "Select Institutional Actors",
+            actor_options,
+            default=["Lecturer", "Student"]
+        )
 
         narrative = st.text_area(
             "Narrative",
